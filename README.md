@@ -21,7 +21,7 @@ unzipped data-directory `./UCI HAR Dataset/` using the files
 
 The script works by preforming the following steps.
 
-1. Dataimport and merging.
+**Dataimport and merging**
 
 Subject id:s are imported from `subject_train.txt` and `subject_test.txt`.
 A variable indicating if the data was from the test or train set is added.
@@ -31,7 +31,7 @@ The sensor data `X_test.txt`, `X_train.txt` is imported from the datafiles. All 
 Variable names are added to the data from `features.txt`.
 Only variables with mean values and standard deviations is kept in the data.
 
-2. Creating a tidy dataset
+**Creating a tidy dataset**
 
 Mean values for each subject at a specific activity for a specific feature 
 was calculated using the `summarise_each` function from the dplyr package.
@@ -39,7 +39,7 @@ The data was then converted into long format.
 From the feature name the domain, type, base feature and, if applicable,
 the X,Y or Z coordinate was extracted. All these was stored in seperate variables.
 
-3. Saving the data. 
+**Saving the data**
 
 The data is saved to the file `UCI_HAR_tidy.txt`.
 
@@ -51,3 +51,8 @@ The codebook also explains the original variables to the
 extent of the information given in the course data.
 
 ## Data
+The data used in this project was collected from UCI.
+Information can be accessed here:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+Licences for the data can be viewed in the code book.
