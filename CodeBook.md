@@ -75,8 +75,7 @@ The set of variables that were estimated from these signals are:
 
 * Features are normalized and bounded within [-1,1].
 
-* The acceleration signal from the smartphone accelerometer X,Y and Z axis in standard gravity units 'g'.
-(features containing **Acc**)
+* The acceleration signal from the smartphone accelerometer X,Y and Z axis in standard gravity units 'g' (features containing **Acc**).
 
 * The body acceleration signal obtained by subtracting the gravity from the total acceleration
 (features containing **BodyAcc**).
